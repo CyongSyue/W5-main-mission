@@ -1,0 +1,284 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration:none;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---- For All ----*/
+body{
+    font-family: 微軟正黑體, sans-serif;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+
+/*---- Container ----*/
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/*---- Header ----*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.navbar{
+    display: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.header h1{
+    width: 25%;
+}
+.LOGO{
+    display: block;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    text-indent: 101%;
+    height: 40px;
+    white-space: nowrap;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 0px 60px 0px auto;
+}
+.menu-link{
+    display: block;
+    padding: 5px 30px;
+    border-radius: 5px;
+
+    font-size: 16px;
+    line-height: 22px;
+    color: #3F5D45;
+    font-weight: bold;
+}
+.menu-link:hover,.shopping-car:hover,.navbar:hover{
+    background-color: #EAF0Ed;
+}
+.shopping-car{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*---- Banner ----*/
+.banner{
+    margin-bottom: 60px;
+}
+
+/*---- Content ----*/
+.content{
+    
+}
+
+
+/*---- From ----*/
+.footer-form{
+    background-color: #3F5D45;
+    padding: 30px;
+}
+.container-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label-form{
+    display: flex;
+    align-items: center;
+}
+.label-form img{
+    height: 40px;
+    margin-right: 20px;
+}
+.label-form span{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #EAF0Ed;
+}
+.form-input{
+    display: flex;
+    position: relative;
+}
+.form-input input {
+    display:block;
+    padding-left: 65px;
+    font-weight: bold;
+    color: #3F5D45;
+    outline: none;
+    border: none;
+}
+.mail-icon{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    bottom: 16px;
+}
+.form-input button{
+    cursor: pointer;
+    background-color: #FFE180;
+    padding: 16px;
+    outline: none;
+    border: none;
+}
+
+/*---- Footer ----*/
+.footer{
+    background-color: #EAF0ED;
+    padding: 30px 0;
+}
+.footer-inner-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contact-method{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.address-list{
+    margin-top: 30px;
+    font-style: 16px;
+    line-height: 24px;
+    color: #3F5D45;
+}
+.slogan{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #3F5D45;
+}
+.footer-inner-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.c-link{
+    display: flex;
+}
+.c-link a{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+.copyright{
+    font-size: 12px;
+    color: #3F5D45;
+}
+
+/*---- max-width: 991px ----*/
+@media (max-width: 991px){
+    .container{
+        max-width: 767px;
+    }
+    .banner{
+        margin-bottom: 0;
+    }
+    .checklist{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .product{
+        width: 100%;
+    }
+    .productlist {
+        justify-content: space-around;
+    }
+    .page-btns {
+        justify-content: center;
+    }
+    .container-form {
+        flex-direction: column;
+    }
+    .label-form {
+        margin-bottom: 10px;
+    }
+}
+/*---- max-width: 767px ----*/
+@media (max-width: 767px){
+    .slogan{
+        display: none;
+    }
+    .navbar{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .header{
+        justify-content: space-around;
+    }
+    .LOGO{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg);
+    }
+    .footer-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-method img{
+        margin-bottom: 40px;
+    }
+    .footer-inner-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .c-link{
+        margin-bottom: 23px;
+    }
+}
