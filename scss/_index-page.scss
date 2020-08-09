@@ -1,0 +1,131 @@
+/*---- Banner ----*/
+.banner{
+    margin-bottom: 60px;
+}
+/*---- Content ----*/
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}/*---- Checklist ----*/
+.checklist{
+    width: 33%;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    h2{
+        background-color: #3F5D45;
+        color: #ffffff;
+        padding: 16px 0px;
+    }
+    li{
+        border: 1px solid #EAF0Ed;
+        a{
+            display: block;
+            padding: 16px 0;
+            color: #3F5D45;
+            text-decoration: none;
+        }
+        :hover{
+            background-color: #EAF0Ed;
+        }
+    }
+}
+/*---- Product ----*/
+.product{
+    width: 66%;
+}
+.productlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.item{
+    margin-bottom: 20px;
+    &-header{
+        position: relative;
+    }
+    &-info{
+        display: flex;
+        align-items: center;
+        border: 1px solid #EAF0Ed;
+        font-size: 20px;
+    }
+}
+.tag{
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    writing-mode: vertical-lr;
+    background-color: #3F5D45;
+    color: #EAF0Ed;
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.like{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+}
+.name{
+    color: #3F5D45;
+    font-weight: lighter;
+    text-align: center;
+    padding: 15px 0;
+    flex: 1px;
+}
+.price{
+    text-align: center;
+    line-height: 28px;
+    font-weight: bold;
+    color: #3F5D45;
+    padding: 15px 20px;
+    border-left: 1px solid #EAF0ED;
+}
+.addtoshopcar{
+    text-align: center;
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+/*---- Page ----*/
+.page-btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:10px 0px 60px;
+}
+.page-btn{
+    border: 1px solid #EAF0Ed;
+    text-align: center;
+    a{
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #3F5D45;
+        :hover{
+            background-color: #3F5D45;
+            color: #EAF0Ed;
+        }
+    }
+    
+}
+.arrow:hover{
+    border-color: #3F5D45;
+}
+.arrow a{
+    padding: 16px;
+    :hover{
+        background-color: #ffffff;
+    }
+}

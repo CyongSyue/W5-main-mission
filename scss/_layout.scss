@@ -1,0 +1,155 @@
+/*---- Container ----*/
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+/*---- Header ----*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    h1{
+        width: 25%;
+    }
+}
+.navbar{
+    display: none;
+    padding: 5px;
+    border-radius: 5px;
+    :hover{
+        background-color: #EAF0Ed;
+    }
+}
+.LOGO{
+    display: block;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    text-indent: 101%;
+    height: 40px;
+    white-space: nowrap;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 0px 60px 0px auto;
+    &-link{
+        display: block;
+        padding: 5px 30px;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #3F5D45;
+        font-weight: bold;
+    }
+        &:hover{
+            background-color: #EAF0Ed;
+        }
+}
+.shopping-car{
+    padding: 5px;
+    border-radius: 5px;
+    :hover{
+        background-color: #EAF0Ed;
+    }
+}
+/*---- From ----*/
+.footer-form{
+    background-color: #3F5D45;
+    margin-top: 60px;
+    padding: 30px;
+}
+.container-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label-form{
+    display: flex;
+    align-items: center;
+    img{
+        height: 400px;
+        margin-right: 20px;
+    }
+    span{
+        display: block;
+        font-style: 23px;
+        font-weight: bold;
+        color: #EAF0Ed;
+    }
+}
+.form-input{
+    display: flex;
+    position: relative;
+    input{
+        display:block;
+        padding-left: 65px;
+        font-weight: bold;
+        color: #3F5D45;
+        outline: none;
+        border: none;
+    }
+    button{
+        cursor: pointer;
+        background-color: #FFE180;
+        padding: 16px;
+        outline: none;
+        border: none;
+    }
+}
+.mail-icon{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    bottom: 16px;
+}
+/*---- Footer ----*/
+.footer{
+    background-color: #EAF0ED;
+    padding: 30px 0;
+    &-inner-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+}
+.contact-method{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.address-list{
+    margin-top: 30px;
+    font-style: 16px;
+    line-height: 24px;
+    color: #3F5D45;
+}
+.slogan{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #3F5D45;
+}
+.footer-inner-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.c-link{
+    display: flex;
+    a{
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+}
+.copyright{
+    font-size: 12px;
+    color: #3F5D45;
+}
